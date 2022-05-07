@@ -1,3 +1,8 @@
+<script lang="ts">
+    export let todo: Todo;
+
+</script>
+
 <style>
     .todo{
         display: grid;
@@ -86,7 +91,7 @@
     </form>
 
     <form class="text" action="" method="">
-        <input type="text"/>
+        <input type="text" value="{todo.text}"/>
         <button class="save" aria-label="save"></button>
     </form>
     <form action="" method="">
